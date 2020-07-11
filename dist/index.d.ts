@@ -18,9 +18,9 @@ declare module 'react-nestable' {
             index: number;
             handler: React.ReactNode;
         }) => React.ReactNode;
-        maxDepth: number;
+        maxDepth?: number;
         renderCollapseIcon?: (args: { isCollapsed: boolean }) => React.ReactNode;
-        onChange: (items: Item[]) => void;
-        confirmChange: (dragItem: Item, destinationParent: Item) => boolean;
+        onChange?: (items: Item[]) => void;
+        confirmChange?: (dragItem: Item, destinationParent: Item) => boolean;
     }> { }
 }
